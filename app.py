@@ -1,10 +1,8 @@
 # app.py
 import streamlit as st
-from nodes import (
-    AgentState,
-    extract_text,
-    refine_with_feedback
-)
+from agent_state import AgentState
+from nodes import refine_with_feedback
+from file_processing import extract_text 
 from workflow import create_workflow
 
 def main():
